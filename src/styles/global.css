@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove unsupported Tailwind v4 features */
+
+:root {
+  --font-size: 16px;
+
+  --background: #ffffff;
+  --foreground: #111414;
+
+  --card: #ffffff;
+  --card-foreground: #111414;
+
+  --primary: #030213;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f2f2ff;
+  --secondary-foreground: #030213;
+
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+
+  --border: #dcdcdc;
+  --ring: #a0a0a0;
+
+  --radius: 8px;
+}
+
+/* Dark mode */
+.dark {
+  --background: #111414;
+  --foreground: #ffffff;
+
+  --card: #111414;
+  --card-foreground: #ffffff;
+
+  --primary: #ffffff;
+  --primary-foreground: #222222;
+
+  --secondary: #2a2a2a;
+  --secondary-foreground: #ffffff;
+
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+
+  --accent: #2a2a2a;
+  --accent-foreground: #ffffff;
+
+  --destructive: #7c1010;
+  --destructive-foreground: #ffffff;
+
+  --border: #2a2a2a;
+  --ring: #555555;
+}
+
+/* Base styles */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--font-size);
+  }
+}
+
+/* Custom serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
