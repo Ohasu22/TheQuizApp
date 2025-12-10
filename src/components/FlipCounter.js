@@ -10,7 +10,7 @@ export default function FlipCounter({ value }) {
 
     if (start === end) return;
 
-    const duration = 10000; // total animation time
+    const duration = 7000; // total animation time
     const stepTime = Math.abs(Math.floor(duration / end));
 
     const timer = setInterval(() => {
@@ -33,3 +33,4 @@ export default function FlipCounter({ value }) {
     </div>
   );
 }
+
